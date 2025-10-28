@@ -9,6 +9,8 @@ public class CustomListTest {
         CustomList list = new CustomList();
         City city = new City("Calgary", "AB");
         assertNotNull(city);
+        assertFalse(list.hasCity(city));
+        list.addCity(city);
         assertTrue(list.hasCity(city));
     }
 }
