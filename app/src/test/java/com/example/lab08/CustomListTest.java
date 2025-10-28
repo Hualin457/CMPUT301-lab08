@@ -5,7 +5,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CustomListTest {
     @Test
-    public void emptyTest() {
-
+    public void testHasCity() {
+        CustomList list = new CustomList();
+        City city = new City("Calgary", "AB");
+        assertNotNull(city);
+        assertTrue(list.hasCity(city));
     }
 }
